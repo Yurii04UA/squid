@@ -73,3 +73,12 @@ body {
    
 }
 
+.main_img_squid{
+   max-width: 1060px;
+  
+}
+
+.main_img{
+   display: flex;
+   justify-content: center;
+}
