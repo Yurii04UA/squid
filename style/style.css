@@ -3,6 +3,10 @@ body {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+
+   font-family: 'Montserrat', sans-serif;
+   color: #fff;
+   
  }
  h1,h2,h3,h4,h5,h6,p,a,div,span,input,button,form {
    margin: 0;
@@ -24,12 +28,48 @@ body {
 
 
  /* buttons */
+ .btn{
+    max-width: 200px;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+ }
 
- 
+ .btn:hover{
+    text-decoration: underline;
+    color: grey;
+ }
+ .login_btn{
+    margin-right: 5px;
+ }
  /* buttons */
 
 .container{
-   max-width: 1520px;
+   max-width: 1540px;
    width: 100%;
    margin: 0 auto;
+   padding: 0 10px;
 }
+
+.con-2{
+   max-width: 1120px;
+   margin: 0 auto;
+   
+}
+
+.header{
+   
+   background: linear-gradient(120deg, #174276 0.01%, #4B3862 101.01%)
+}
+
+.header_logo{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ 
+   padding-top: 75px;
+   
+}
+
