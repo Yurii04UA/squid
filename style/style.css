@@ -83,7 +83,8 @@ a {
 
 .header {
    padding-bottom: 85px;
-   background: linear-gradient(120deg, #174276 0.01%, #4B3862 101.01%)
+   background: linear-gradient(120deg, #174276 0.01%, #4B3862 101.01%);
+   position: relative;
 }
 
 .header_logo {
@@ -97,7 +98,6 @@ a {
 
 .main_img_squid {
    max-width: 1060px;
-
 }
 
 .main_img {
@@ -121,4 +121,21 @@ a {
    max-width: 650px;
    text-align: center;
    margin: 20px 0;
+}
+
+.bubbles1{
+   position: absolute;
+   left: 5%;
+   top: 75%;
+}
+.bubbles2{
+   position: absolute;
+   right: 7%;
+   top: 19%;
+}
+
+/* Main section */
+.main_section{
+   background: linear-gradient(200deg, #174276 0.01%, #4B3862 101.01%);
+   height: 500px;
 }
