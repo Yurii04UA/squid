@@ -138,11 +138,26 @@ a {
 .main_section{
    background: linear-gradient(200deg, #174276 0.01%, #4B3862 101.01%);
    padding: 200px 0;
+   position: relative;
    
+}
+.main_section_box{
+   display: flex;
+   height: 1200px;
+}
+
+.main_section_left{
+   width: 50%;
+}
+
+.main_section_right{
+display: flex;
+flex-direction: column;
+justify-content: end;
 }
 
 .card{
-   padding:  65px 80px;
+   padding:  65px 70px;
    border: 1px solid #0e1f35;
    max-width: 500px;
    background-color: #0b3262;
@@ -154,6 +169,10 @@ a {
 .card_number, .card_title{
    display: inline;
 }
+.card_title{
+   max-width: 350px;
+   
+}
 .card_number{
    font-size: 70px;
    color: #944B6E;
@@ -161,5 +180,12 @@ a {
 }
 
 .card_text{
+   margin-top: 10px;
    line-height: 25px;
+}
+
+.shark{
+   position: absolute;
+   top: 10%;
+   right: 15%;
 }
