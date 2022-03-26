@@ -137,5 +137,29 @@ a {
 /* Main section */
 .main_section{
    background: linear-gradient(200deg, #174276 0.01%, #4B3862 101.01%);
-   height: 500px;
+   padding: 200px 0;
+   
+}
+
+.card{
+   padding:  65px 80px;
+   border: 1px solid #0e1f35;
+   max-width: 500px;
+   background-color: #0b3262;
+   margin-bottom: 150px;
+   border-radius: 5px;
+  
+}
+
+.card_number, .card_title{
+   display: inline;
+}
+.card_number{
+   font-size: 70px;
+   color: #944B6E;
+   
+}
+
+.card_text{
+   line-height: 25px;
 }
