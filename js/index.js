@@ -12,3 +12,5 @@ let elements = document.querySelectorAll('.card');
 for (let elm of elements) {
   observer.observe(elm);
 }
+
+// need added Animation for all cards  
