@@ -42,7 +42,7 @@ a {
 /* CSS reset */
 
 
-/* buttons */
+/*////////////////// buttons  */
 .btn {
    max-width: 200px;
    border: 1.5px solid white;
@@ -61,12 +61,12 @@ a {
    margin-right: 5px;
 }
 
-.connect_btn{
+.connect_btn {
    max-width: 210px;
    background-color: #0b3262;
 }
 
-/* buttons */
+/*  buttons */
 
 .container {
    max-width: 1540px;
@@ -112,8 +112,8 @@ a {
 
 }
 
-.main_title{
- 
+.main_title {
+
    margin-top: 20px;
 }
 
@@ -125,87 +125,192 @@ a {
 
 /* images */
 
-.bubbles1{
+.bubbles1 {
    position: absolute;
    left: 5%;
    top: 75%;
+   filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
 }
-.bubbles2{
+
+.bubbles2 {
    position: absolute;
    right: 7%;
    top: 19%;
+   filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
 }
+
 /* images */
 
 
-/* Main section */
-.main_section{
+/* ////////////////// Main section */
+.main_section {
    background: linear-gradient(200deg, #174276 0.01%, #4B3862 101.01%);
    padding-top: 200px;
    padding-bottom: 100px;
    position: relative;
-   
+
 }
-.main_section_box{
+
+.main_section_box {
    display: flex;
    height: 1100px;
 }
 
-.main_section_left{
+.main_section_left {
    width: 50%;
 }
 
-.main_section_right{
-display: flex;
-flex-direction: column;
-justify-content: end;
+.main_section_right {
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
 }
 
-.card{
-   padding:  65px 70px;
-   
+.card {
+   padding: 65px 70px;
+
    max-width: 500px;
    background-color: #0b3262;
    margin-bottom: 150px;
    border-radius: 5px;
-  
+
    box-shadow: 13px 19px 34px rgb(0 0 44 / 52%);
 }
 
-.card_number, .card_title{
+.card_number,
+.card_title {
    display: inline;
 }
-.card_title{
+
+.card_title {
    max-width: 350px;
-   
-}
-.card_number{
-   font-size: 70px;
-   color: #944B6E;
-   
+
 }
 
-.card_text{
+.card_number {
+   font-size: 70px;
+   color: #944B6E;
+
+}
+
+.card_text {
    margin-top: 10px;
    line-height: 25px;
 }
- /* images */
-.shark{
+
+/* images */
+.shark {
    position: absolute;
    top: 10%;
    right: 15%;
+   filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
 }
 
-.squid_pirate{
+.squid_pirate {
    position: absolute;
    top: 75%;
    left: 15%;
+   filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
 }
 
-.bubbles3{
+.bubbles3 {
    position: absolute;
    right: 7%;
    bottom: 3%;
+   filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
 }
 
 /* images */
+
+/* ////////////////// media section  */
+
+.media_section{
+   background: linear-gradient(350deg, #174276 0.01%, #4B3862 101.01%);
+   padding-top: 100px;
+   padding-bottom: 100px;
+   
+}
+
+.media_tittle{
+   max-width: 450px;
+   text-align: left;
+   font-size: 35px;
+   padding-left: 50px;
+   margin-bottom: 40px;
+}
+
+/* ////////////////// subscription section */
+
+.subscription_section{
+   background: linear-gradient(100deg, #174276 0.01%, #4B3862 101.01%);
+   padding-top: 100px;
+   padding-bottom: 100px;
+   position: relative;
+}
+
+.subscription_cards{
+   display: flex;
+   justify-content: space-around;
+}
+
+.subscription_card{
+   max-width: 350px;
+   padding: 50px;
+   background: linear-gradient(100deg, #4e1a25 0.01%, rgb(49, 24, 80) 50.01%);
+   border-radius: 10px;
+
+   box-shadow: 13px 19px 34px rgb(0 0 44 / 52%);
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.subscription_card_title{
+   margin-bottom: 15px;
+   font-size: 26px;
+}
+.subscription_card_text{
+   margin-bottom: 15px;
+}
+.btn_subscription{
+   display: block;
+   max-width: 250px;
+   text-align: center;
+   border: 3px solid;
+}
+/* images */
+.fish{
+   position: absolute;
+   right: 18%;
+   filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
+}
+.aqualunger{
+   position: absolute;
+   left: 4%;
+   top: 53%;
+   filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
+}
+
+.bubble5{
+   position: absolute;
+   right: 5%;
+   top: 15%;
+   filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
+}
+/* images */
+/* ///////////////////footer */
+.footer{
+   max-width: 1540px;
+   width: 100%;
+   margin: 0 auto;
+   background: linear-gradient(100deg, #174276 0.01%, #4B3862 101.01%);
+   display: flex;
+   justify-content: center;
+}
+
+.footer img{
+     
+   width: 100%;
+   margin: 0 auto;
+}
