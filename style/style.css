@@ -95,9 +95,13 @@ a {
    padding-top: 75px;
 
 }
+.header_logo img{
+   filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
+}
 
 .main_img_squid {
    max-width: 1060px;
+   
 }
 
 .main_img {
