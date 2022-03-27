@@ -179,7 +179,14 @@ a {
    border-radius: 5px;
 
    box-shadow: 13px 19px 34px rgb(0 0 44 / 52%);
+
+   opacity: 0;
 }
+
+.card.element_show {
+   opacity: 1;
+   transition: opacity 1s;
+ }
 
 .card_number,
 .card_title {
