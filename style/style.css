@@ -202,7 +202,15 @@ a {
    transform: translateX(0%);
  }
 
-
+ .hiden_subscription_card{
+    opacity: 0;
+    transform: scale(0);
+ }
+ .hiden_subscription_card.show_card{
+   opacity: 1;
+   transition: all 1s;
+   transform: scale(1);
+ }
 
 .card_number,
 .card_title {
