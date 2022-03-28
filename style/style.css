@@ -180,13 +180,29 @@ a {
 
    box-shadow: 13px 19px 34px rgb(0 0 44 / 52%);
 
-   opacity: 0;
+   
 }
-
-.card.element_show {
+.hiden_left{
+   opacity: 0;
+   transform: translateX(-50%);
+}
+.hiden_left.element_show {
    opacity: 1;
-   transition: opacity 1s;
+   transition: all 1s;
+   transform: translateX(0%);
  }
+
+ .hiden_right{
+   opacity: 0;
+   transform: translateX(50%);
+}
+.hiden_right.element_show {
+   opacity: 1;
+   transition: all 1s;
+   transform: translateX(0%);
+ }
+
+
 
 .card_number,
 .card_title {
