@@ -6,6 +6,7 @@ body {
 
    font-family: 'Montserrat', sans-serif;
    color: #fff;
+  
 
 }
 
@@ -67,7 +68,11 @@ a {
 }
 
 /*  buttons */
-
+.wrapper{
+   max-width: 1540px;
+   margin: 0 auto;
+   background-color: #0b3262;
+}
 .container {
    max-width: 1540px;
    width: 100%;
@@ -157,6 +162,7 @@ a {
 
 .main_section_box {
    display: flex;
+   justify-content: center;
    height: 1100px;
 }
 
@@ -182,6 +188,10 @@ a {
 
    
 }
+
+.c3_hiden,.c2_hiden{   /* hiden block */
+   display: none;  
+}
 .hiden_left{
    opacity: 0;
    transform: translateX(-50%);
@@ -202,15 +212,7 @@ a {
    transform: translateX(0%);
  }
 
- .hiden_subscription_card{
-    opacity: 0;
-    transform: scale(0);
- }
- .hiden_subscription_card.show_card{
-   opacity: 1;
-   transition: all 1s;
-   transform: scale(1);
- }
+
 
 .card_number,
 .card_title {
@@ -316,16 +318,29 @@ a {
    border: 3px solid;
    
 }
+
+.hiden_subscription_card{
+   opacity: 0;
+   transform: scale(0);
+}
+.hiden_subscription_card.show_card{
+  opacity: 1;
+  transition: all 1s;
+  transform: scale(1);
+  
+}
+
 /* images */
 .fish{
    position: absolute;
    right: 18%;
+   top: 85%;
    filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
 }
 .aqualunger{
    position: absolute;
    left: 4%;
-   top: 53%;
+   top: 80%;
    filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
 }
 
@@ -351,3 +366,64 @@ a {
    width: 100%;
    margin: 0 auto;
 }
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 1150px) {
+   .media_section{
+      display: flex;
+      
+   }
+   .video{
+      width: 950px;
+   }
+
+   .main_img_squid{
+      max-width: 900px;
+   }
+
+   .fish{
+      display: none;
+   }
+
+   .header{
+      padding-left: 50px;
+      padding-right: 50px;
+   }
+}
+ 
+ @media screen and (max-width: 1150px) {
+   .main_section_left{
+      width: auto;
+   }
+
+   .card{
+      max-width: 700px;
+      padding: 50px;
+      margin-bottom: 50px;
+   }
+
+   .shark{
+      display: none;
+   }
+
+   .c2,.c3{
+      display: none;
+   }
+   .c3_hiden,.c2_hiden{
+      display: block;
+   }
+   .main_section_box{
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+   }
+   .squid_pirate {
+      position: absolute;
+      top: 91%;
+      left:52%;
+      filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
+   }
+ }
