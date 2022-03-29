@@ -5,7 +5,7 @@ function onEntry( entry) {
          change.target.classList.add('element_show') // added class for main cards
          change.target.classList.add('show_card') // added class for footer cards
       }
-      console.log(change);
+      // console.log(change);
    })
 }
 
