@@ -395,8 +395,16 @@ a {
 }
  
  @media screen and (max-width: 1150px) {
+   .container {
+      overflow:hidden;
+      padding-left: 30px;
+      padding-right: 30px;
+   }
    .main_section_left{
       width: auto;
+   }
+   .main_section{
+      padding-top: 80px;
    }
 
    .card{
@@ -420,10 +428,32 @@ a {
       align-items: center;
       height: auto;
    }
-   .squid_pirate {
-      position: absolute;
-      top: 91%;
-      left:52%;
-      filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.25));
+   .squid_pirate,.bubble5,.aqualunger {
+      display: none;
    }
  }
+
+ @media screen and (max-width: 980px){
+   .video{
+      width: 650px;
+      height: 350px;
+   }
+
+   .main_img_squid{
+      max-width: 600px;
+   }
+   
+   .bubbles1{
+      top: 83%;
+   }
+   .bubbles3{
+      bottom: 0%;
+   }
+ }
+
+ @media screen and (max-width: 800px){
+   .subscription_card{
+      max-width: 300px;
+      padding: 20px;
+   }
+}
