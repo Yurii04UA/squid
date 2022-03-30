@@ -40,16 +40,31 @@ for (let elm of elementsFooter) {
 
 const btnRegistr = document.querySelector('.registration_btn');
 const modalWindow = document.querySelector('.modal_registr');
+
+console.log(btnRegistr);
+
 const btnCloseModalWindow = document.querySelectorAll('.btn_close');
+
+const modalMenu = document.querySelector('.modal_menu')
+const btnMenu = document.querySelector('.menu_icon')
+const btnCloseMenu = document.querySelector('.btn_close_menu')
 
 
 btnRegistr.addEventListener("click", () =>{
-   modalWindow.classList.toggle('show_modal_registr')
+   modalWindow.classList.toggle('show_modal')
 });
 
 btnCloseModalWindow.forEach(elem => {
    elem.addEventListener("click",() => {
-      modalWindow.classList.remove('show_modal_registr')
+      modalWindow.classList.remove('show_modal')
    })
 })
 
+
+btnMenu.addEventListener("click", () =>{
+   modalMenu.classList.toggle('show_modal')
+});
+
+btnCloseMenu.addEventListener('click', () => {
+   modalMenu.classList.toggle('show_modal')
+})
