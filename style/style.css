@@ -557,7 +557,7 @@ a {
    padding: 30px;
    height: 100vh;
    border: 2px solid black;
-   background: linear-gradient(50deg, #174276 0.01%, #4B3862 101.01%);
+   background: linear-gradient(296deg, #0b3466 0.01%, #664a89 101.01%);
    transform: translateX(150%);
    opacity: 0;
    transition: all 0.5s;
@@ -591,12 +591,22 @@ a {
 }
 
 .register_box{
+   margin-top: 50px;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   
+   align-items: center; 
 }
 
+.register_title{
+   font-size: 32px;
+   margin-bottom: 15px;
+}
+.register_text{
+   font-size: 20px;
+   max-width: 400px;
+   text-align: center;
+   margin-bottom: 15px;
+}
 .register_form{
    width: 500px;
    display: flex;
@@ -604,5 +614,11 @@ a {
 }
 .register_form_input{
   color: #4e1a25;
-  font-size: 33px;
+  font-size: 22px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 20px;
 }
+
