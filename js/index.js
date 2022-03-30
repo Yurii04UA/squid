@@ -34,3 +34,22 @@ for (let elm of elementsFooter) {
    observerFooter.observe(elm);
 }
 
+
+
+//// Modal window
+
+const btnRegistr = document.querySelector('.registration_btn');
+const modalWindow = document.querySelector('.modal_login');
+const btnCloseModalWindow = document.querySelectorAll('.btn_close');
+
+
+btnRegistr.addEventListener("click", () =>{
+   modalWindow.classList.toggle('show_modal_login')
+});
+
+btnCloseModalWindow.forEach(elem => {
+   elem.addEventListener("click",() => {
+      modalWindow.classList.remove('show_modal_login')
+   })
+})
+

@@ -71,7 +71,8 @@ a {
 .wrapper{
    max-width: 1540px;
    margin: 0 auto;
-   background-color: #0b3262;
+   background: linear-gradient(120deg, #174276 0.01%, #4B3862 101.01%);
+
 }
 .container {
    max-width: 1540px;
@@ -545,4 +546,63 @@ a {
    .main_title{
       text-align: center;
    }
+}
+
+
+/* //// Modal window */
+
+.modal_login{
+   max-width: 1540px;
+   margin: 0 auto;
+   padding: 30px;
+   height: 100vh;
+   border: 2px solid black;
+   background: linear-gradient(50deg, #174276 0.01%, #4B3862 101.01%);
+   transform: translateX(150%);
+   opacity: 0;
+   transition: all 0.5s;
+   
+   position: fixed;
+   top: 0;
+   right: 0; 
+   bottom: 0;
+   left: 0;
+   z-index: 1000;
+   
+   
+
+}
+
+.modal_login.show_modal_login{
+   opacity: 1;
+   transform: translateX(0%);
+   
+}
+.btn_close{
+   display: block;
+   text-align: end;
+   font-size: 50px;
+   margin-right: 30px;
+}
+
+.btn_close:hover{
+   color: #93afd1;
+   
+}
+
+.register_box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+
+.register_form{
+   width: 500px;
+   display: flex;
+   flex-direction: column;
+}
+.register_form_input{
+  color: #4e1a25;
+  font-size: 33px;
 }
