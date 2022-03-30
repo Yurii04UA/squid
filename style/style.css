@@ -550,13 +550,14 @@ a {
 
 
 /* //// Modal window */
-
-.modal_login{
+.events{
+   pointer-events: none;
+}
+.modal_registr{
    max-width: 1540px;
    margin: 0 auto;
    padding: 30px;
    height: 100vh;
-   border: 2px solid black;
    background: linear-gradient(296deg, #0b3466 0.01%, #664a89 101.01%);
    transform: translateX(150%);
    opacity: 0;
@@ -573,7 +574,7 @@ a {
 
 }
 
-.modal_login.show_modal_login{
+.modal_registr.show_modal_registr{
    opacity: 1;
    transform: translateX(0%);
    
