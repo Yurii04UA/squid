@@ -44,6 +44,8 @@ const btnLogin = document.querySelectorAll(".login_btn");
 const modalLoginWindow = document.querySelector(".modal_login");
 const btnCloseWindowLogin = document.querySelector(".btn_close_login");
 
+const btnService = document.querySelectorAll('.btn_subscription')
+
 const modalMenu = document.querySelector(".modal_menu");
 const btnMenu = document.querySelector(".menu_icon");
 const btnCloseMenu = document.querySelector(".btn_close_menu");
@@ -82,3 +84,11 @@ btnMenu.addEventListener("click", () => {
 btnCloseMenu.addEventListener("click", () => {
   modalMenu.classList.toggle("show_modal");
 });
+
+
+// Activate service
+btnService.forEach(e =>{
+  e.addEventListener('click', () =>{
+    modalLoginWindow.classList.toggle("show_modal");
+  })
+})
