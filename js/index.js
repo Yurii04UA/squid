@@ -47,7 +47,7 @@ const btnCloseWindowLogin = document.querySelector(".btn_close_login");
 const modalMenu = document.querySelector(".modal_menu");
 const btnMenu = document.querySelector(".menu_icon");
 const btnCloseMenu = document.querySelector(".btn_close_menu");
-
+console.log(btnRegistr);
 // show modal registr
 btnRegistr.forEach((elem) => {
   elem.addEventListener("click", () => {
@@ -59,6 +59,7 @@ btnRegistr.forEach((elem) => {
 btnCloseModalWindowRegistr.forEach((elem) => {
   elem.addEventListener("click", () => {
     modalRegistrWindow.classList.remove("show_modal");
+    modalLoginWindow.classList.remove("show_modal");
   });
 });
 
