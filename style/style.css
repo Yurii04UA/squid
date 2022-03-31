@@ -639,16 +639,17 @@ a {
    
 }
 
-.register_box{
+.register_box,.login_box{
    margin-top: 50px;
    display: flex;
    flex-direction: column;
    align-items: center; 
 }
 
-.register_title{
+.register_title,.login_title{
    font-size: 32px;
    margin-bottom: 15px;
+   text-align: center;
 }
 .register_text{
    font-size: 20px;
@@ -656,8 +657,9 @@ a {
    text-align: center;
    margin-bottom: 15px;
 }
-.register_form{
-   width: 500px;
+.register_form, .login_form{
+   max-width: 500px;
+   width: 100%;
    display: flex;
    flex-direction: column;
 }
@@ -685,3 +687,21 @@ a {
    padding: 10px;
    text-align: center;
 }
+
+.pass{
+   color: #ff0000db;
+   text-align: end;
+   margin-bottom: 15px;
+}
+
+.btn_minimal{
+   max-width: 500px;
+   width: 100%;
+   text-align: end;
+}
+
+.pass:hover, .btn_minimal:hover{
+   text-decoration: underline;
+}
+
+
