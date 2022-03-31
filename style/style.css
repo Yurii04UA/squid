@@ -64,6 +64,8 @@ a {
 
 .connect_btn {
    max-width: 210px;
+   width: 100%;
+   text-align: center;
    background-color: #0b3262;
 }
 
@@ -550,6 +552,7 @@ a {
 
 
 /* //// Modal window */
+/* // Modal menu */
 .modal_menu{
    max-width: 1540px;
    margin: 0 auto;
@@ -582,7 +585,8 @@ a {
 .events{
    pointer-events: none;
 }
-.modal_registr{
+/* // Modal rigistration and login */
+.modal_registr, .modal_login{
    max-width: 1540px;
    margin: 0 auto;
    padding: 30px;
@@ -600,19 +604,19 @@ a {
    z-index: 1000;
 }
 
-.modal_registr.show_modal{
+.modal_registr.show_modal, .modal_login.show_modal{
    opacity: 1;
    transform: translateX(0%);
    
 }
-.btn_close{
+.btn_close,.btn_close_login{
    display: block;
    text-align: end;
    font-size: 50px;
    margin-right: 30px;
 }
 
-.btn_close:hover{
+.btn_close:hover,.btn_close_login:hover{
    color: #93afd1;
    
 }
@@ -649,3 +653,17 @@ a {
   padding-left: 20px;
 }
 
+.buttons_modal_menu{
+   margin-top: 200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.buttons_modal_menu a{
+   max-width: 400px;
+   width: 100%;
+   margin-bottom: 20px;
+   margin-right: 0;
+   padding: 10px;
+   text-align: center;
+}
